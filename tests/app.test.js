@@ -1,5 +1,5 @@
-import request from 'supertest';
-import app from './app'; // Asegúrate de exportar tu app de app.js
+const request = require('supertest');
+const app = require('../app');
 
 describe('API Tests', () => {
   it('should return all tasks', async () => {
