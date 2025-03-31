@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/PazAutumn/desafio_m8.git'
+                git 'https://github.com/berrodev/desafio_m8_tst.git'
             }
         }
         stage('Install Dependencies') {
