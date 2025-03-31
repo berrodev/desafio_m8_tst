@@ -18,7 +18,9 @@ app.get('/tasks/:id', (req, res) => {
   res.json(task);
 });
 
-module.exports = app;
-
 const PORT = 3000;
-app.listen(PORT, () => console.log(`API is running on port ${PORT}`));
+const server = app.listen(PORT, () =>
+  console.log(`API is running on port ${PORT}`)
+);
+
+module.exports = server;

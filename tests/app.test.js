@@ -20,4 +20,8 @@ describe('API Tests', () => {
     expect(response.status).toBe(404);
     expect(response.text).toBe('Task not found');
   });
+
+  afterAll((done) => {
+    app.close(done);
+  });
 });
